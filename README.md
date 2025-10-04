@@ -53,7 +53,7 @@ npx ts-node src/app/main.ts
 
 ## 🔐 Flujo completo (registro → login → menú por rol) — Capturas de consola
 
-### Inicio: Login / Registro (`mostrarMenuLogin`)
+### Inicio: Login / Registro (`mostrarMenuAuth`)
 
 ```
 👤 Bienvenido
