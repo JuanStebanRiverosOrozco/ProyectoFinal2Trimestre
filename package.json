@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "name": "proyectofinal2trimestre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/app/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanStebanRiverosOrozco/ProyectoFinal2Trimestre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanStebanRiverosOrozco/ProyectoFinal2Trimestre/issues"
+  },
+  "homepage": "https://github.com/JuanStebanRiverosOrozco/ProyectoFinal2Trimestre#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^2.3.1",
+    "cli-table3": "^0.6.5",
+    "date-fns": "^4.1.0"
+  }
+}
