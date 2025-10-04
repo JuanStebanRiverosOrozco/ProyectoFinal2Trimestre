@@ -8,7 +8,7 @@ export class ComidaFormatter {
     if (productos.length === 0) return "No hay productos disponibles.";
     let salida = "ID | Producto | Precio\n";
     productos.forEach(p => {
-      salida += `${p.getId()} | ${p.getNombre()} | $${p.getPrecio().toLocaleString()}\n`;
+      salida += `${p.getId()} | ${p.getNombre()} | $${p.getPrecio()}\n`;
     });
     return salida;
   }
@@ -26,9 +26,9 @@ export class ComidaFormatter {
         c.getId(),
         c.getNombre(),
         c.getTipoCombo() ?? "-",
-        `$${c.getPrecio().toLocaleString()}`,
-        `$${base.toLocaleString()}`,
-        `${c.getDescuento()}%`,
+        `$${(c.getPrecio()).toLocaleString()}`,
+        `$${(base).toLocaleString()}`,
+        `${(c.getDescuento()).toLocaleString()}%`,
         c.getProductos().map(p => p.getNombre()).join(", "),
       ]);
     });
@@ -50,12 +50,12 @@ export class ComidaFormatter {
           c.getNombre(),
           "combo",
           c.getTipoCombo() ?? "-",
-          `$${c.getPrecio().toLocaleString()}`,
-          `$${base.toLocaleString()}`,
+          `$${(c.getPrecio()).toLocaleString()}`,
+          `$${(base).toLocaleString()}`,
           c.getProductos().map(p => p.getNombre()).join(", "),
         ]);
       } else {
-        table.push([c.getId(), c.getNombre(), "producto", "-", `$${c.getPrecio().toLocaleString()}`, "-", "-"]);
+        table.push([c.getId(), c.getNombre(), "producto", "-", `$${(c.getPrecio()).toLocaleString()}`, "-", "-"]);
       }
     });
 
@@ -86,10 +86,10 @@ export class ComidaFormatter {
     const itemsDetalle = venta.getItems().map(i => {
       if (i.esCombo()) {
         const base = i.getProductos().reduce((s, p) => s + p.getPrecio(), 0);
-        const contenido = i.getProductos().map(p => `   - ${p.getNombre()} ($${p.getPrecio()})`).join("\n");
-        return `• ${i.getNombre()} — $${i.getPrecio()} (base $${base} - ${i.getDescuento()}%)\n${contenido}`;
+        const contenido = i.getProductos().map(p => `   - ${p.getNombre()} ($${(p.getPrecio()).toLocaleString()})`).join("\n");
+        return `• ${i.getNombre()} — $${((i.getPrecio().toLocaleString()))} (base $${(base).toLocaleString()} - ${i.getDescuento()}%)\n${contenido}`;
       }
-      return `• ${i.getNombre()} — $${i.getPrecio()}`;
+      return `• ${i.getNombre()} — $${(i.getPrecio()).toLocaleString()}`;
     }).join("\n");
 
     return `
@@ -101,11 +101,11 @@ Correo: ${venta.getCompradorCorreo()}
 ----------------------------------------
 ${itemsDetalle}
 ----------------------------------------
-Subtotal (sin descuento): $${subtotalBase.toLocaleString()}
-Descuento total: -$${descuentoTotal.toLocaleString()}
-Subtotal (con descuento): $${subtotalConDescuento.toLocaleString()}
-IVA (19%): $${iva.toLocaleString()}
-TOTAL: $${total.toLocaleString()}
+Subtotal (sin descuento): $${(subtotalBase).toLocaleString()}
+Descuento total: -$${(descuentoTotal).toLocaleString()}
+Subtotal (con descuento): $${(subtotalConDescuento).toLocaleString()}
+IVA (19%): $${(iva).toLocaleString()}
+TOTAL: $${(total).toLocaleString()}
 `;
   }
 
@@ -140,10 +140,10 @@ TOTAL: $${total.toLocaleString()}
         v.getCompradorNombre(),
         v.getCompradorCorreo(),
         detalle,
-        `$${subtotalBase.toLocaleString()}`,
-        `-$${descuentoTotal.toLocaleString()}`,
-        `$${iva.toLocaleString()}`,
-        `$${total.toLocaleString()}`,
+        `$${(subtotalBase).toLocaleString()}`,
+        `-$${(descuentoTotal).toLocaleString()}`,
+        `$${(iva).toLocaleString()}`,
+        `$${(total).toLocaleString()}`,
       ]);
     });
 

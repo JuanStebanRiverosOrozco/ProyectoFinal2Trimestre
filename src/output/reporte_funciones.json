@@ -1,0 +1,9 @@
+[
+  {
+    "id": "1",
+    "pelicula": "Terminator",
+    "sala": "1",
+    "fecha": "2025-10-10T23:30:00.000Z",
+    "precioEntrada": 5500
+  }
+]

@@ -1,0 +1,135 @@
+{
+  "ventas": [
+    {
+      "id": "1",
+      "fecha": "2025-10-10T23:30:00.000Z",
+      "pelicula": "Terminator",
+      "sala": "1",
+      "cantidad": 5,
+      "asientos": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "cliente": {
+        "nombre": "beickert",
+        "correo": "beickert@gmail.com"
+      },
+      "precioUnitario": 5500,
+      "subtotal": 27500,
+      "iva": 5225,
+      "total": 32725
+    },
+    {
+      "id": "2",
+      "fecha": "2025-10-10T23:30:00.000Z",
+      "pelicula": "Terminator",
+      "sala": "1",
+      "cantidad": 2,
+      "asientos": [
+        "B1",
+        "B2"
+      ],
+      "cliente": {
+        "nombre": "invitado",
+        "correo": "invitado@gmail.com"
+      },
+      "precioUnitario": 5500,
+      "subtotal": 11000,
+      "iva": 2090,
+      "total": 13090
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "juan",
+      "correo": "juan@gmail.com",
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "nombre": "samuel",
+      "correo": "samuel@gmail.com",
+      "rol": "vendedor"
+    },
+    {
+      "id": "3",
+      "nombre": "beickert",
+      "correo": "beickert@gmail.com",
+      "rol": "cliente"
+    }
+  ],
+  "peliculas": [
+    {
+      "id": "1",
+      "titulo": "Terminator",
+      "duracion": 120,
+      "genero": "Acción",
+      "clasificacion": "G"
+    }
+  ],
+  "funciones": [
+    {
+      "id": "1",
+      "pelicula": "Terminator",
+      "sala": "1",
+      "fecha": "2025-10-10T23:30:00.000Z",
+      "precioEntrada": 5500
+    }
+  ],
+  "salas": [
+    {
+      "id": "1",
+      "nombre": "1",
+      "tipo": "2D",
+      "capacidad": 25
+    }
+  ],
+  "comidas": [
+    {
+      "id": "1",
+      "nombre": "agua",
+      "precio": 5000,
+      "esCombo": false
+    },
+    {
+      "id": "2",
+      "nombre": "crispetas",
+      "precio": 10000,
+      "esCombo": false
+    },
+    {
+      "id": "3",
+      "nombre": "chocolatina",
+      "precio": 6000,
+      "esCombo": false
+    },
+    {
+      "id": "4",
+      "nombre": "hot dog",
+      "precio": 6000,
+      "esCombo": false
+    },
+    {
+      "id": "5",
+      "nombre": "gaseosa",
+      "precio": 7000,
+      "esCombo": false
+    },
+    {
+      "id": "6",
+      "nombre": "combo 1",
+      "precio": 18900,
+      "esCombo": true
+    },
+    {
+      "id": "7",
+      "nombre": "combo 1",
+      "precio": 23800,
+      "esCombo": true
+    }
+  ]
+}

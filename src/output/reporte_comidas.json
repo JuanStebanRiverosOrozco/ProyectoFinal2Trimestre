@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "nombre": "agua",
+    "precio": 5000,
+    "esCombo": false
+  },
+  {
+    "id": "2",
+    "nombre": "crispetas",
+    "precio": 10000,
+    "esCombo": false
+  },
+  {
+    "id": "3",
+    "nombre": "chocolatina",
+    "precio": 6000,
+    "esCombo": false
+  },
+  {
+    "id": "4",
+    "nombre": "hot dog",
+    "precio": 6000,
+    "esCombo": false
+  },
+  {
+    "id": "5",
+    "nombre": "gaseosa",
+    "precio": 7000,
+    "esCombo": false
+  },
+  {
+    "id": "6",
+    "nombre": "combo 1",
+    "precio": 18900,
+    "esCombo": true
+  },
+  {
+    "id": "7",
+    "nombre": "combo 1",
+    "precio": 23800,
+    "esCombo": true
+  }
+]

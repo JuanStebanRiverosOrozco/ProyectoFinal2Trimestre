@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1",
+    "fecha": "2025-10-10T23:30:00.000Z",
+    "pelicula": "Terminator",
+    "sala": "1",
+    "cantidad": 5,
+    "asientos": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "cliente": {
+      "nombre": "beickert",
+      "correo": "beickert@gmail.com"
+    },
+    "precioUnitario": 5500,
+    "subtotal": 27500,
+    "iva": 5225,
+    "total": 32725
+  },
+  {
+    "id": "2",
+    "fecha": "2025-10-10T23:30:00.000Z",
+    "pelicula": "Terminator",
+    "sala": "1",
+    "cantidad": 2,
+    "asientos": [
+      "B1",
+      "B2"
+    ],
+    "cliente": {
+      "nombre": "invitado",
+      "correo": "invitado@gmail.com"
+    },
+    "precioUnitario": 5500,
+    "subtotal": 11000,
+    "iva": 2090,
+    "total": 13090
+  }
+]
