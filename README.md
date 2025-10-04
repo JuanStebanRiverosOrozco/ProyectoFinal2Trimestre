@@ -54,7 +54,7 @@ npx ts-node src/app/main.ts
 
 ### Inicio: Login / Registro (`mostrarMenuLogin`)
 
-```
+```bash
 👤 Bienvenido
   ◉ 📝 Registrarse
     🔘 🔑 Iniciar sesión
@@ -63,7 +63,7 @@ npx ts-node src/app/main.ts
 
 #### Ejemplo — Registrarse
 
-```
+```bash
 Nombre: Juan Pérez
 Correo: juan@example.com
 Contraseña: ******
@@ -78,7 +78,7 @@ Rol:
 
 #### Ejemplo — Iniciar sesión
 
-```
+```bash
 Nombre:Juan Pérez
 Correo: juan@example.com
 Contraseña: ******
@@ -92,13 +92,13 @@ Contraseña: ******
 
 ### Menú Admin (`usuario.getRol() === "admin"`)
 
-```
+```bash
 👤 Juan Pérez (admin) - Menú
 ```
 
 Opciones:
 
-```
+```bash
 🎬 Gestionar Películas
 🏟️ Gestionar Salas
 📅 Gestionar Funciones
@@ -110,13 +110,13 @@ Opciones:
 
 ### Menú Vendedor (`usuario.getRol() === "vendedor"`)
 
-```
+```bash
 👤 Ana (vendedor) - Menú
 ```
 
 Opciones:
 
-```
+```bash
 🎟️ Vender Boletos
 🍿 Vender Comida
 🚪 Cerrar sesión
@@ -125,13 +125,13 @@ Opciones:
 
 ### Menú Cliente (`usuario.getRol() === "cliente"`)
 
-```
+```bash
 👤 Carlos (cliente) - Menú
 ```
 
 Opciones:
 
-```
+```bash
 🎟️ Comprar Entradas
 🍿 Comprar Comida
 🚪 Cerrar sesión
@@ -144,7 +144,7 @@ Opciones:
 
 ### 🎞️ Gestión de Películas (admin)
 
-```
+```bash
 📄 Listar películas
 ➕ Crear película
 🗑️ Eliminar película
@@ -164,7 +164,7 @@ Opciones:
 
 ### 🏟️ Gestión de Salas (admin)
 
-```
+```bash
 📄 Listar salas
 ➕ Crear sala
 🗑️ Eliminar sala
@@ -184,7 +184,7 @@ Opciones:
 
 ### 📅 Gestión de Funciones (admin)
 
-```
+```bash
 📄 Listar funciones
 ➕ Crear función
 🗑️ Eliminar función
@@ -204,7 +204,7 @@ Opciones:
 
 ### 🎟️ Gestión de Ventas (admin)
 
-```
+```bash
 📄 Listar TODAS las ventas
 🔙 Volver
 ```
@@ -222,7 +222,7 @@ Opciones:
 
 ### 🍿 Gestión de Comida (admin)
 
-```
+```bash
 ➕ Registrar producto
 ➕ Registrar combo
 📄 Listar productos y combos
